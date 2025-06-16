@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+	<style>
+		select {
+			background-color: rgba(255, 255, 255, 0.05); /* initial select box */
+			color: white;
+		}
+
+		select option {
+			background-color: white; /* dropdown menu background */
+			color: black;            /* dropdown menu text */
+		}
+	</style>
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+	<header class="fixed top-0 w-full bg-black/20 backdrop-blur-md z-50 border-b border-white/10">
+		<div class="container mx-auto px-4 py-4">
+			<div class="flex items-center justify-between">
+				<div class="flex items-center space-x-2">
+					<div class="w-10 h-10 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-lg flex items-center justify-center">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+							stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+							class="lucide lucide-code-xml w-6 h-6 text-white">
+							<path d="m18 16 4-4-4-4"></path>
+							<path d="m6 8-4 4 4 4"></path>
+							<path d="m14.5 4-5 16"></path>
+						</svg>
+					</div>
+					<span class="text-2xl font-bold text-white">Wirecoder</span>
+				</div>
+				<nav class="hidden md:flex items-center space-x-8">
+					<a class="text-white hover:text-cyan-400 transition-colors" href="#home">Home</a>
+					<a class="text-white hover:text-cyan-400 transition-colors" href="#services">Services</a>
+					<a class="text-white hover:text-cyan-400 transition-colors" href="#about">About</a>
+					<a class="text-white hover:text-cyan-400 transition-colors" href="#projects">Projects</a>
+					<a class="text-white hover:text-cyan-400 transition-colors" href="#gallery">Gallery</a>
+					<a class="text-white hover:text-cyan-400 transition-colors" href="#blog">Blog</a>
+					<a class="text-white hover:text-cyan-400 transition-colors" href="#contact">Contact</a>
+				</nav>
+				<div class="hidden md:flex items-center space-x-4">
+					<a href="#contact" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 px-4 py-2 bg-gradient-to-r from-cyan-400/20 to-purple-500/20 border border-cyan-400/50 text-cyan-400 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-purple-500 hover:text-white transition-all duration-300 backdrop-blur-sm cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar w-4 h-4 mr-2"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>Book Appointment</a>
+				</div>
+				<button class="md:hidden text-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu w-6 h-6"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+
+	<section id="home" class="pt-24 pb-16 px-4">
+		<div class="container mx-auto">
+			<div class="grid lg:grid-cols-2 gap-12 items-center">
+				<div class="space-y-8">
+					<div class="space-y-4">
+						<div class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary hover:bg-primary/80 bg-gradient-to-r from-cyan-400 to-purple-500 text-white border-0">🚀 Innovative Web Solutions</div>
+						<h1 class="text-5xl lg:text-7xl font-bold text-white leading-tight">Code Your<span class="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent"><!-- -->Digital Future</span></h1>
+						<p class="text-xl text-gray-300 leading-relaxed">We craft exceptional web experiences that drive growth for tech companies and startups. From custom applications to stunning designs, we wire your ideas into reality.</p>
+					</div>
+					<div class="flex flex-col sm:flex-row gap-4">
+						<a href="#contact" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 h-11 rounded-md px-8 bg-gradient-to-r from-cyan-400 to-purple-500 hover:from-cyan-500 hover:to-purple-600 text-white border-0 cursor-pointer">Start Your Project<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+						<!-- <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-11 rounded-md px-8 border-cyan-400/50 text-cyan-400 hover:bg-cyan-400 hover:text-black hover:border-cyan-400 transition-all duration-300 backdrop-blur-sm bg-white/5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play w-5 h-5 mr-2"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>Watch Demo</button> -->
+					</div>
+					<div class="flex items-center space-x-8 pt-8">
+						<div class="text-center">
+							<div class="text-3xl font-bold text-white">50+</div>
+							<div class="text-gray-400">Projects Delivered</div>
+						</div>
+						<div class="text-center">
+							<div class="text-3xl font-bold text-white">98%</div>
+							<div class="text-gray-400">Client Satisfaction</div>
+						</div>
+						<div class="text-center">
+							<div class="text-3xl font-bold text-white">24/7</div>
+							<div class="text-gray-400">Support</div>
+						</div>
+					</div>
+				</div>
+				<div class="relative">
+					<div class="relative z-10">
+						<img alt="Modern workspace" loading="lazy" width="600" height="400" decoding="async" data-nimg="1" class="rounded-2xl shadow-2xl" style="color:transparent" src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&amp;h=400&amp;fit=crop">
+					</div>
+					<div class="absolute inset-0 bg-gradient-to-r from-cyan-400/20 to-purple-500/20 rounded-2xl blur-3xl">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="services" class="py-16 px-4">
+		<div class="container mx-auto">
+			<div class="text-center mb-16">
+				<div class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 bg-white/10 text-white border-0 mb-4">Our Services</div>
+				<h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">What We Do Best</h2>
+				<p class="text-xl text-gray-300 max-w-3xl mx-auto">From concept to deployment, we provide comprehensive web solutions that help your business thrive in the digital landscape.</p>
+			</div>
+			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+				<div class="rounded-lg bg-card text-card-foreground cursor-pointer transition-all duration-500 group bg-gradient-to-br from-slate-800/80 to-slate-700/60 border-2 border-cyan-400/80 scale-105 shadow-2xl shadow-cyan-400/30 ring-1 ring-cyan-400/50 service-item-btn" id="custom_web_applications">
+					<div class="flex flex-col space-y-1.5 p-6 text-center pb-4">
+						<div class="w-16 h-16 mx-auto mb-4 rounded-2xl flex items-center justify-center transition-all duration-300 bg-white/10 text-gray-300 group-hover:bg-white/20"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-xml w-8 h-8"><path d="m18 16 4-4-4-4"></path><path d="m6 8-4 4 4 4"></path><path d="m14.5 4-5 16"></path></svg></div>
+						<div class="font-semibold tracking-tight text-white text-xl mb-2">Custom Web Applications</div>
+						<div class="text-gray-300 text-sm leading-relaxed">Scalable, robust web applications tailored to your business needs with cutting-edge technologies.</div>
+					</div>
+					<div class="p-6 pt-0">
+						<div class="flex flex-wrap gap-2 justify-center features">
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs border-cyan-400/50 text-cyan-300">React/Next.js</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs border-cyan-400/50 text-cyan-300">Node.js Backend</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs border-cyan-400/50 text-cyan-300">+<!-- -->2<!-- --> more</div>
+						</div>
+					</div>
+				</div>
+				<div class="rounded-lg border text-card-foreground shadow-sm cursor-pointer transition-all duration-500 group bg-white/5 border-white/10 hover:bg-white/10 hover:border-white/20 hover:scale-102 service-item-btn" id="wordpress_development">
+					<div class="flex flex-col space-y-1.5 p-6 text-center pb-4">
+						<div class="w-16 h-16 mx-auto mb-4 rounded-2xl flex items-center justify-center transition-all duration-300 bg-white/10 text-gray-300 group-hover:bg-white/20"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe w-8 h-8"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg></div>
+						<div class="font-semibold tracking-tight text-white text-xl mb-2">WordPress Development</div>
+						<div class="text-gray-300 text-sm leading-relaxed">Professional WordPress websites with custom themes, plugins, and seamless content management.</div>
+					</div>
+					<div class="p-6 pt-0">
+						<div class="flex flex-wrap gap-2 justify-center features">
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs border-white/20 text-gray-400">Custom Themes</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs border-white/20 text-gray-400">Plugin Development</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs border-white/20 text-gray-400">+<!-- -->2<!-- --> more</div>
+						</div>
+					</div>
+				</div>
+				<div class="rounded-lg border text-card-foreground shadow-sm cursor-pointer transition-all duration-500 group bg-white/5 border-white/10 hover:bg-white/10 hover:border-white/20 hover:scale-102 service-item-btn" id="ecommerce_development">
+					<div class="flex flex-col space-y-1.5 p-6 text-center pb-4">
+						<div class="w-16 h-16 mx-auto mb-4 rounded-2xl flex items-center justify-center transition-all duration-300 bg-white/10 text-gray-300 group-hover:bg-white/20"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart w-8 h-8"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg></div>
+						<div class="font-semibold tracking-tight text-white text-xl mb-2">Ecommerce Development</div>
+						<div class="text-gray-300 text-sm leading-relaxed">Complete ecommerce solutions that drive sales and provide exceptional user experiences.</div>
+					</div>
+					<div class="p-6 pt-0">
+						<div class="flex flex-wrap gap-2 justify-center features">
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs border-white/20 text-gray-400">Payment Integration</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs border-white/20 text-gray-400">Inventory Management</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs border-white/20 text-gray-400">+<!-- -->2<!-- --> more</div>
+						</div>
+					</div>
+				</div>
+				<div class="rounded-lg border text-card-foreground shadow-sm cursor-pointer transition-all duration-500 group bg-white/5 border-white/10 hover:bg-white/10 hover:border-white/20 hover:scale-102 service-item-btn" id="website_development">
+					<div class="flex flex-col space-y-1.5 p-6 text-center pb-4">
+						<div class="w-16 h-16 mx-auto mb-4 rounded-2xl flex items-center justify-center transition-all duration-300 bg-gradient-to-r from-cyan-400 to-purple-500 text-white scale-110"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-smartphone w-8 h-8"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect><path d="M12 18h.01"></path></svg></div>
+						<div class="font-semibold tracking-tight text-white text-xl mb-2">Website Development</div>
+						<div class="text-gray-300 text-sm leading-relaxed">Modern, responsive websites that engage users and represent your brand perfectly.</div>
+					</div>
+					<div class="p-6 pt-0">
+						<div class="flex flex-wrap gap-2 justify-center features">
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs border-white/20 text-gray-400">Responsive Design</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs border-white/20 text-gray-400">Fast Loading</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs border-white/20 text-gray-400">+<!-- -->2<!-- --> more</div>
+						</div>
+					</div>
+				</div>
+				<div class="rounded-lg border text-card-foreground shadow-sm cursor-pointer transition-all duration-500 group bg-white/5 border-white/10 hover:bg-white/10 hover:border-white/20 hover:scale-102 service-item-btn" id="web_design">
+					<div class="flex flex-col space-y-1.5 p-6 text-center pb-4">
+						<div class="w-16 h-16 mx-auto mb-4 rounded-2xl flex items-center justify-center transition-all duration-300 bg-white/10 text-gray-300 group-hover:bg-white/20"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-palette w-8 h-8"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"></path></svg></div>
+						<div class="font-semibold tracking-tight text-white text-xl mb-2">Web Design</div>
+						<div class="text-gray-300 text-sm leading-relaxed">Creative, user-centered designs that combine aesthetics with functionality.</div>
+					</div>
+					<div class="p-6 pt-0">
+						<div class="flex flex-wrap gap-2 justify-center features">
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs border-white/20 text-gray-400">UI/UX Design</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs border-white/20 text-gray-400">Brand Identity</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs border-white/20 text-gray-400">+<!-- -->2<!-- --> more</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="relative service-item-container" id="custom_web_applications_container">
+				<div class="rounded-lg border bg-card text-card-foreground bg-gradient-to-br from-slate-800/60 to-slate-900/80 border-cyan-400/30 overflow-hidden shadow-2xl shadow-cyan-400/20">
+					<div class="absolute inset-0 bg-gradient-to-r from-cyan-400/8 to-purple-500/8"></div>
+					<div class="relative z-10">
+						<div class="flex flex-col space-y-1.5 p-6 pb-6">
+							<div class="flex items-center justify-between mb-6">
+								<div class="flex items-center space-x-4">
+									<div class="p-4 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-2xl text-white">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-xml w-8 h-8"><path d="m18 16 4-4-4-4"></path><path d="m6 8-4 4 4 4"></path><path d="m14.5 4-5 16"></path></svg>
+									</div>
+									<div>
+										<div class="font-semibold tracking-tight text-3xl text-white mb-2">Custom Web Applications</div>
+										<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-primary hover:bg-primary/80 bg-gradient-to-r from-cyan-400/20 to-purple-500/20 text-cyan-300 border-cyan-400/30">Featured Service</div>
+									</div>
+								</div>
+								<div class="hidden md:flex space-x-2">
+									<button class="w-3 h-3 rounded-full transition-all duration-300 bg-gradient-to-r from-cyan-400 to-purple-500 scale-125"></button>
+									<button class="w-3 h-3 rounded-full transition-all duration-300 bg-white/20 hover:bg-white/40"></button>
+									<button class="w-3 h-3 rounded-full transition-all duration-300 bg-white/20 hover:bg-white/40"></button>
+									<button class="w-3 h-3 rounded-full transition-all duration-300 bg-white/20 hover:bg-white/40"></button>
+									<button class="w-3 h-3 rounded-full transition-all duration-300 bg-white/20 hover:bg-white/40"></button>
+								</div>
+							</div>
+							<div class="text-gray-300 text-lg leading-relaxed max-w-4xl">Scalable, robust web applications tailored to your business needs with cutting-edge technologies.<!-- --> Our expert team combines cutting-edge technology with creative design to deliver solutions that not only meet your current needs but scale with your business growth.</div>
+						</div>
+						<div class="p-6 pt-0 space-y-8">
+							<div>
+								<h3 class="text-xl font-semibold text-white mb-4 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-cyan-400 mr-2"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>Key Features &amp; Technologies</h3>
+								<div class="grid md:grid-cols-2 gap-4">
+									<div class="flex items-center space-x-3 p-3 bg-white/5 rounded-lg border border-white/10">
+										<div class="w-2 h-2 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full"></div>
+										<span class="text-gray-300">React/Next.js</span>
+									</div>
+									<div class="flex items-center space-x-3 p-3 bg-white/5 rounded-lg border border-white/10">
+										<div class="w-2 h-2 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full"></div>
+										<span class="text-gray-300">Node.js/Laravel/PHP Backend</span>
+									</div>
+									<div class="flex items-center space-x-3 p-3 bg-white/5 rounded-lg border border-white/10">
+										<div class="w-2 h-2 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full"></div>
+										<span class="text-gray-300">Database Integration</span>
+									</div>
+									<div class="flex items-center space-x-3 p-3 bg-white/5 rounded-lg border border-white/10">
+										<div class="w-2 h-2 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full"></div>
+										<span class="text-gray-300">API Development</span>
+									</div>
+								</div>
+							</div>
+							<div class="grid md:grid-cols-3 gap-6">
+								<div class="text-center p-6 bg-gradient-to-br from-cyan-400/10 to-transparent rounded-xl border border-cyan-400/20">
+									<div class="text-2xl font-bold text-white mb-2">Fast</div>
+									<div class="text-cyan-300 text-sm">Delivery</div>
+								</div>
+								<div class="text-center p-6 bg-gradient-to-br from-purple-500/10 to-transparent rounded-xl border border-purple-400/20">
+									<div class="text-2xl font-bold text-white mb-2">24/7</div>
+									<div class="text-purple-300 text-sm">Support</div>
+								</div>
+								<div class="text-center p-6 bg-gradient-to-br from-cyan-400/10 to-purple-500/10 rounded-xl border border-white/20">
+									<div class="text-2xl font-bold text-white mb-2">100%</div>
+									<div class="text-gray-300 text-sm">Quality</div>
+								</div>
+							</div>
+							<div class="flex flex-col sm:flex-row gap-4 pt-4">
+								<a href="#contact" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 px-4 py-2 flex-1 bg-gradient-to-r from-cyan-400 to-purple-500 hover:from-cyan-500 hover:to-purple-600 text-white border-0 h-12">Get Started with <!-- -->Custom Web Applications<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+								<a href="#projects" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 px-4 py-2 bg-gradient-to-r from-cyan-400/20 to-purple-500/20 border border-cyan-400/50 text-cyan-400 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-purple-500 hover:text-white transition-all duration-300 backdrop-blur-sm h-12">View Portfolio</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="relative service-item-container hidden" id="wordpress_development_container">
+				<div class="rounded-lg border bg-card text-card-foreground bg-gradient-to-br from-slate-800/60 to-slate-900/80 border-cyan-400/30 overflow-hidden shadow-2xl shadow-cyan-400/20">
+					<div class="absolute inset-0 bg-gradient-to-r from-cyan-400/8 to-purple-500/8"></div>
+					<div class="relative z-10">
+						<div class="flex flex-col space-y-1.5 p-6 pb-6">
+							<div class="flex items-center justify-between mb-6">
+								<div class="flex items-center space-x-4">
+									<div class="p-4 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-2xl text-white">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe w-8 h-8"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+									</div>
+									<div>
+										<div class="font-semibold tracking-tight text-3xl text-white mb-2">WordPress Development</div>
+										<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-primary hover:bg-primary/80 bg-gradient-to-r from-cyan-400/20 to-purple-500/20 text-cyan-300 border-cyan-400/30">Featured Service</div>
+									</div>
+								</div>
+								<div class="hidden md:flex space-x-2">
+									<button class="w-3 h-3 rounded-full transition-all duration-300 bg-white/20 hover:bg-white/40"></button>
+									<button class="w-3 h-3 rounded-full transition-all duration-300 bg-gradient-to-r from-cyan-400 to-purple-500 scale-125"></button>
+									<button class="w-3 h-3 rounded-full transition-all duration-300 bg-white/20 hover:bg-white/40"></button>
+									<button class="w-3 h-3 rounded-full transition-all duration-300 bg-white/20 hover:bg-white/40"></button>
+									<button class="w-3 h-3 rounded-full transition-all duration-300 bg-white/20 hover:bg-white/40"></button>
+								</div>
+							</div>
+							<div class="text-gray-300 text-lg leading-relaxed max-w-4xl">Professional WordPress websites with custom themes, plugins, and seamless content management.<!-- --> Our expert team combines cutting-edge technology with creative design to deliver solutions that not only meet your current needs but scale with your business growth.</div>
+						</div>
+						<div class="p-6 pt-0 space-y-8">
+							<div>
+								<h3 class="text-xl font-semibold text-white mb-4 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-cyan-400 mr-2"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>Key Features &amp; Technologies</h3>
+								<div class="grid md:grid-cols-2 gap-4">
+									<div class="flex items-center space-x-3 p-3 bg-white/5 rounded-lg border border-white/10">
+										<div class="w-2 h-2 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full"></div>
+										<span class="text-gray-300">Custom Themes</span>
+									</div>
+									<div class="flex items-center space-x-3 p-3 bg-white/5 rounded-lg border border-white/10">
+										<div class="w-2 h-2 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full"></div>
+										<span class="text-gray-300">Plugin Development</span>
+									</div>
+									<div class="flex items-center space-x-3 p-3 bg-white/5 rounded-lg border border-white/10">
+										<div class="w-2 h-2 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full"></div>
+										<span class="text-gray-300">SEO Optimization</span>
+									</div>
+									<div class="flex items-center space-x-3 p-3 bg-white/5 rounded-lg border border-white/10">
+										<div class="w-2 h-2 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full"></div>
+										<span class="text-gray-300">Performance Tuning</span>
+									</div>
+								</div>
+							</div>
+							<div class="grid md:grid-cols-3 gap-6">
+								<div class="text-center p-6 bg-gradient-to-br from-cyan-400/10 to-transparent rounded-xl border border-cyan-400/20">
+									<div class="text-2xl font-bold text-white mb-2">Fast</div>
+									<div class="text-cyan-300 text-sm">Delivery</div>
+								</div>
+								<div class="text-center p-6 bg-gradient-to-br from-purple-500/10 to-transparent rounded-xl border border-purple-400/20">
+									<div class="text-2xl font-bold text-white mb-2">24/7</div>
+									<div class="text-purple-300 text-sm">Support</div>
+								</div>
+								<div class="text-center p-6 bg-gradient-to-br from-cyan-400/10 to-purple-500/10 rounded-xl border border-white/20">
+									<div class="text-2xl font-bold text-white mb-2">100%</div>
+									<div class="text-gray-300 text-sm">Quality</div>
+								</div>
+							</div>
+							<div class="flex flex-col sm:flex-row gap-4 pt-4">
+								<a href="#contact" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 px-4 py-2 flex-1 bg-gradient-to-r from-cyan-400 to-purple-500 hover:from-cyan-500 hover:to-purple-600 text-white border-0 h-12">Get Started with <!-- -->WordPress Development<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+								<a href="#projects" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 px-4 py-2 bg-gradient-to-r from-cyan-400/20 to-purple-500/20 border border-cyan-400/50 text-cyan-400 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-purple-500 hover:text-white transition-all duration-300 backdrop-blur-sm h-12">View Portfolio</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="relative service-item-container hidden" id="ecommerce_development_container">
+				<div class="rounded-lg border bg-card text-card-foreground bg-gradient-to-br from-slate-800/60 to-slate-900/80 border-cyan-400/30 overflow-hidden shadow-2xl shadow-cyan-400/20">
+					<div class="absolute inset-0 bg-gradient-to-r from-cyan-400/8 to-purple-500/8"></div>
+					<div class="relative z-10">
+						<div class="flex flex-col space-y-1.5 p-6 pb-6">
+							<div class="flex items-center justify-between mb-6">
+								<div class="flex items-center space-x-4">
+									<div class="p-4 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-2xl text-white">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart w-8 h-8"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
+									</div>
+									<div>
+										<div class="font-semibold tracking-tight text-3xl text-white mb-2">Ecommerce Development</div>
+										<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-primary hover:bg-primary/80 bg-gradient-to-r from-cyan-400/20 to-purple-500/20 text-cyan-300 border-cyan-400/30">Featured Service</div>
+									</div>
+								</div>
+								<div class="hidden md:flex space-x-2">
+									<button class="w-3 h-3 rounded-full transition-all duration-300 bg-white/20 hover:bg-white/40"></button>
+									<button class="w-3 h-3 rounded-full transition-all duration-300 bg-white/20 hover:bg-white/40"></button>
+									<button class="w-3 h-3 rounded-full transition-all duration-300 bg-gradient-to-r from-cyan-400 to-purple-500 scale-125"></button>
+									<button class="w-3 h-3 rounded-full transition-all duration-300 bg-white/20 hover:bg-white/40"></button>
+									<button class="w-3 h-3 rounded-full transition-all duration-300 bg-white/20 hover:bg-white/40"></button>
+								</div>
+							</div>
+							<div class="text-gray-300 text-lg leading-relaxed max-w-4xl">Complete ecommerce solutions that drive sales and provide exceptional user experiences.<!-- --> Our expert team combines cutting-edge technology with creative design to deliver solutions that not only meet your current needs but scale with your business growth.</div>
+						</div>
+						<div class="p-6 pt-0 space-y-8">
+							<div>
+								<h3 class="text-xl font-semibold text-white mb-4 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-cyan-400 mr-2"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>Key Features &amp; Technologies</h3>
+								<div class="grid md:grid-cols-2 gap-4">
+									<div class="flex items-center space-x-3 p-3 bg-white/5 rounded-lg border border-white/10">
+										<div class="w-2 h-2 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full"></div>
+										<span class="text-gray-300">Payment Integration</span>
+									</div>
+									<div class="flex items-center space-x-3 p-3 bg-white/5 rounded-lg border border-white/10">
+										<div class="w-2 h-2 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full"></div>
+										<span class="text-gray-300">Inventory Management</span>
+									</div>
+									<div class="flex items-center space-x-3 p-3 bg-white/5 rounded-lg border border-white/10">
+										<div class="w-2 h-2 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full"></div>
+										<span class="text-gray-300">Mobile Responsive</span>
+									</div>
+									<div class="flex items-center space-x-3 p-3 bg-white/5 rounded-lg border border-white/10">
+										<div class="w-2 h-2 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full"></div>
+										<span class="text-gray-300">Analytics Dashboard</span>
+									</div>
+								</div>
+							</div>
+							<div class="grid md:grid-cols-3 gap-6">
+								<div class="text-center p-6 bg-gradient-to-br from-cyan-400/10 to-transparent rounded-xl border border-cyan-400/20">
+									<div class="text-2xl font-bold text-white mb-2">Fast</div>
+									<div class="text-cyan-300 text-sm">Delivery</div>
+								</div>
+								<div class="text-center p-6 bg-gradient-to-br from-purple-500/10 to-transparent rounded-xl border border-purple-400/20">
+									<div class="text-2xl font-bold text-white mb-2">24/7</div>
+									<div class="text-purple-300 text-sm">Support</div>
+								</div>
+								<div class="text-center p-6 bg-gradient-to-br from-cyan-400/10 to-purple-500/10 rounded-xl border border-white/20">
+									<div class="text-2xl font-bold text-white mb-2">100%</div>
+									<div class="text-gray-300 text-sm">Quality</div>
+								</div>
+							</div>
+							<div class="flex flex-col sm:flex-row gap-4 pt-4">
+								<a href="#contact" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 px-4 py-2 flex-1 bg-gradient-to-r from-cyan-400 to-purple-500 hover:from-cyan-500 hover:to-purple-600 text-white border-0 h-12">Get Started with <!-- -->Ecommerce Development<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+								<a href="#projects" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 px-4 py-2 bg-gradient-to-r from-cyan-400/20 to-purple-500/20 border border-cyan-400/50 text-cyan-400 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-purple-500 hover:text-white transition-all duration-300 backdrop-blur-sm h-12">View Portfolio</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="relative service-item-container hidden" id="website_development_container">
+				<div class="rounded-lg border bg-card text-card-foreground bg-gradient-to-br from-slate-800/60 to-slate-900/80 border-cyan-400/30 overflow-hidden shadow-2xl shadow-cyan-400/20">
+					<div class="absolute inset-0 bg-gradient-to-r from-cyan-400/8 to-purple-500/8"></div>
+					<div class="relative z-10">
+						<div class="flex flex-col space-y-1.5 p-6 pb-6">
+							<div class="flex items-center justify-between mb-6">
+								<div class="flex items-center space-x-4">
+									<div class="p-4 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-2xl text-white">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-smartphone w-8 h-8"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect><path d="M12 18h.01"></path></svg>
+									</div>
+									<div>
+										<div class="font-semibold tracking-tight text-3xl text-white mb-2">Website Development</div>
+										<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-primary hover:bg-primary/80 bg-gradient-to-r from-cyan-400/20 to-purple-500/20 text-cyan-300 border-cyan-400/30">Featured Service</div>
+									</div>
+								</div>
+								<div class="hidden md:flex space-x-2">
+									<button class="w-3 h-3 rounded-full transition-all duration-300 bg-white/20 hover:bg-white/40"></button>
+									<button class="w-3 h-3 rounded-full transition-all duration-300 bg-white/20 hover:bg-white/40"></button>
+									<button class="w-3 h-3 rounded-full transition-all duration-300 bg-white/20 hover:bg-white/40"></button>
+									<button class="w-3 h-3 rounded-full transition-all duration-300 bg-gradient-to-r from-cyan-400 to-purple-500 scale-125"></button>
+									<button class="w-3 h-3 rounded-full transition-all duration-300 bg-white/20 hover:bg-white/40"></button>
+								</div>
+							</div>
+							<div class="text-gray-300 text-lg leading-relaxed max-w-4xl">Modern, responsive websites that engage users and represent your brand perfectly.<!-- --> Our expert team combines cutting-edge technology with creative design to deliver solutions that not only meet your current needs but scale with your business growth.</div>
+						</div>
+						<div class="p-6 pt-0 space-y-8">
+							<div>
+								<h3 class="text-xl font-semibold text-white mb-4 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-cyan-400 mr-2"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>Key Features &amp; Technologies</h3>
+								<div class="grid md:grid-cols-2 gap-4">
+									<div class="flex items-center space-x-3 p-3 bg-white/5 rounded-lg border border-white/10">
+										<div class="w-2 h-2 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full"></div>
+										<span class="text-gray-300">Responsive Design</span>
+									</div>
+									<div class="flex items-center space-x-3 p-3 bg-white/5 rounded-lg border border-white/10">
+										<div class="w-2 h-2 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full"></div>
+										<span class="text-gray-300">Fast Loading</span>
+									</div>
+									<div class="flex items-center space-x-3 p-3 bg-white/5 rounded-lg border border-white/10">
+										<div class="w-2 h-2 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full"></div>
+										<span class="text-gray-300">SEO Ready</span>
+									</div>
+									<div class="flex items-center space-x-3 p-3 bg-white/5 rounded-lg border border-white/10">
+										<div class="w-2 h-2 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full"></div>
+										<span class="text-gray-300">Cross-browser Compatible</span>
+									</div>
+								</div>
+							</div>
+							<div class="grid md:grid-cols-3 gap-6">
+								<div class="text-center p-6 bg-gradient-to-br from-cyan-400/10 to-transparent rounded-xl border border-cyan-400/20">
+									<div class="text-2xl font-bold text-white mb-2">Fast</div>
+									<div class="text-cyan-300 text-sm">Delivery</div>
+								</div>
+								<div class="text-center p-6 bg-gradient-to-br from-purple-500/10 to-transparent rounded-xl border border-purple-400/20">
+									<div class="text-2xl font-bold text-white mb-2">24/7</div>
+									<div class="text-purple-300 text-sm">Support</div>
+								</div>
+								<div class="text-center p-6 bg-gradient-to-br from-cyan-400/10 to-purple-500/10 rounded-xl border border-white/20">
+									<div class="text-2xl font-bold text-white mb-2">100%</div>
+									<div class="text-gray-300 text-sm">Quality</div>
+								</div>
+							</div>
+							<div class="flex flex-col sm:flex-row gap-4 pt-4">
+								<a href="#contact" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 px-4 py-2 flex-1 bg-gradient-to-r from-cyan-400 to-purple-500 hover:from-cyan-500 hover:to-purple-600 text-white border-0 h-12">Get Started with <!-- -->Website Development<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+								<a href="#projects" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 px-4 py-2 bg-gradient-to-r from-cyan-400/20 to-purple-500/20 border border-cyan-400/50 text-cyan-400 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-purple-500 hover:text-white transition-all duration-300 backdrop-blur-sm h-12">View Portfolio</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="relative service-item-container hidden" id="web_design_container">
+				<div class="rounded-lg border bg-card text-card-foreground bg-gradient-to-br from-slate-800/60 to-slate-900/80 border-cyan-400/30 overflow-hidden shadow-2xl shadow-cyan-400/20">
+					<div class="absolute inset-0 bg-gradient-to-r from-cyan-400/8 to-purple-500/8"></div>
+					<div class="relative z-10">
+						<div class="flex flex-col space-y-1.5 p-6 pb-6">
+							<div class="flex items-center justify-between mb-6">
+								<div class="flex items-center space-x-4">
+									<div class="p-4 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-2xl text-white">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-palette w-8 h-8"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"></path></svg>
+									</div>
+									<div>
+										<div class="font-semibold tracking-tight text-3xl text-white mb-2">Web Design</div>
+										<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-primary hover:bg-primary/80 bg-gradient-to-r from-cyan-400/20 to-purple-500/20 text-cyan-300 border-cyan-400/30">Featured Service</div>
+									</div>
+								</div>
+								<div class="hidden md:flex space-x-2">
+									<button class="w-3 h-3 rounded-full transition-all duration-300 bg-white/20 hover:bg-white/40"></button>
+									<button class="w-3 h-3 rounded-full transition-all duration-300 bg-white/20 hover:bg-white/40"></button>
+									<button class="w-3 h-3 rounded-full transition-all duration-300 bg-white/20 hover:bg-white/40"></button>
+									<button class="w-3 h-3 rounded-full transition-all duration-300 bg-white/20 hover:bg-white/40"></button>
+									<button class="w-3 h-3 rounded-full transition-all duration-300 bg-gradient-to-r from-cyan-400 to-purple-500 scale-125"></button>
+								</div>
+							</div>
+							<div class="text-gray-300 text-lg leading-relaxed max-w-4xl">Creative, user-centered designs that combine aesthetics with functionality.<!-- --> Our expert team combines cutting-edge technology with creative design to deliver solutions that not only meet your current needs but scale with your business growth.</div>
+						</div>
+						<div class="p-6 pt-0 space-y-8">
+							<div>
+								<h3 class="text-xl font-semibold text-white mb-4 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5 text-cyan-400 mr-2"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>Key Features &amp; Technologies</h3>
+								<div class="grid md:grid-cols-2 gap-4">
+									<div class="flex items-center space-x-3 p-3 bg-white/5 rounded-lg border border-white/10">
+										<div class="w-2 h-2 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full"></div>
+										<span class="text-gray-300">UI/UX Design</span>
+									</div>
+									<div class="flex items-center space-x-3 p-3 bg-white/5 rounded-lg border border-white/10">
+										<div class="w-2 h-2 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full"></div>
+										<span class="text-gray-300">Brand Identity</span>
+									</div>
+									<div class="flex items-center space-x-3 p-3 bg-white/5 rounded-lg border border-white/10">
+										<div class="w-2 h-2 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full"></div>
+										<span class="text-gray-300">Prototyping</span>
+									</div>
+									<div class="flex items-center space-x-3 p-3 bg-white/5 rounded-lg border border-white/10">
+										<div class="w-2 h-2 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full"></div>
+										<span class="text-gray-300">User Research</span>
+									</div>
+								</div>
+							</div>
+							<div class="grid md:grid-cols-3 gap-6">
+								<div class="text-center p-6 bg-gradient-to-br from-cyan-400/10 to-transparent rounded-xl border border-cyan-400/20">
+									<div class="text-2xl font-bold text-white mb-2">Fast</div>
+									<div class="text-cyan-300 text-sm">Delivery</div>
+								</div>
+								<div class="text-center p-6 bg-gradient-to-br from-purple-500/10 to-transparent rounded-xl border border-purple-400/20">
+									<div class="text-2xl font-bold text-white mb-2">24/7</div>
+									<div class="text-purple-300 text-sm">Support</div>
+								</div>
+								<div class="text-center p-6 bg-gradient-to-br from-cyan-400/10 to-purple-500/10 rounded-xl border border-white/20">
+									<div class="text-2xl font-bold text-white mb-2">100%</div>
+									<div class="text-gray-300 text-sm">Quality</div>
+								</div>
+							</div>
+							<div class="flex flex-col sm:flex-row gap-4 pt-4">
+								<a href="#contact" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 px-4 py-2 flex-1 bg-gradient-to-r from-cyan-400 to-purple-500 hover:from-cyan-500 hover:to-purple-600 text-white border-0 h-12">Get Started with <!-- -->Web Design<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+								<a href="#projects" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 px-4 py-2 bg-gradient-to-r from-cyan-400/20 to-purple-500/20 border border-cyan-400/50 text-cyan-400 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-purple-500 hover:text-white transition-all duration-300 backdrop-blur-sm h-12">View Portfolio</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section id="about" class="py-16 px-4">
+		<div class="container mx-auto">
+			<div class="grid lg:grid-cols-2 gap-12 items-center">
+				<div class="space-y-8">
+					<div>
+						<div class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 bg-white/10 text-white border-0 mb-4">About Wirecoder</div>
+						<h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">Wiring Innovation Into Every Project</h2>
+						<p class="text-xl text-gray-300 leading-relaxed mb-6">At Wirecoder, we believe in the power of clean code and creative design. Our team of passionate developers and designers work together to create digital experiences that not only look amazing but perform exceptionally.</p>
+						<p class="text-lg text-gray-400 leading-relaxed">Founded with the vision to bridge the gap between complex technology and user-friendly solutions, we've helped dozens of startups and established companies achieve their digital goals.</p>
+					</div>
+					<div class="grid grid-cols-2 gap-6">
+						<div class="text-center p-6 bg-white/5 rounded-lg border border-white/10">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users w-8 h-8 text-cyan-400 mx-auto mb-3"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+							<div class="text-2xl font-bold text-white">15+</div>
+							<div class="text-gray-400">Team Members</div>
+						</div>
+						<div class="text-center p-6 bg-white/5 rounded-lg border border-white/10">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-coffee w-8 h-8 text-purple-400 mx-auto mb-3"><path d="M10 2v2"></path><path d="M14 2v2"></path><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"></path><path d="M6 2v2"></path></svg>
+							<div class="text-2xl font-bold text-white">1000+</div>
+							<div class="text-gray-400">Cups of Coffee</div>
+						</div>
+					</div>
+				</div>
+				<div class="relative">
+					<img alt="Team collaboration" loading="lazy" decoding="async" data-nimg="1" class="rounded-2xl shadow-2xl" style="color:transparent" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
+					<!-- <div class="absolute -bottom-6 -right-6 bg-gradient-to-r from-cyan-400 to-purple-500 p-6 rounded-2xl">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-8 h-8 text-white">
+							<path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+						</svg>
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="projects" class="py-16 px-4">
+		<div class="container mx-auto">
+			<div class="text-center mb-16">
+				<div class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 bg-white/10 text-white border-0 mb-4">Our Work</div>
+				<h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">Previous Projects</h2>
+				<p class="text-xl text-gray-300 max-w-3xl mx-auto">Discover some of our recent work and see how we've helped businesses transform their digital presence.</p>
+			</div>
+			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<div class="rounded-lg border text-card-foreground shadow-sm bg-white/5 border-white/10 hover:bg-white/10 transition-all duration-300 group overflow-hidden">
+					<div class="relative overflow-hidden">
+						<img alt="HyipPro Traders" loading="lazy" width="400" height="300" decoding="async" data-nimg="1" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110" style="color:transparent" src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&amp;h=300&amp;fit=crop">
+						<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+						</div>
+						<div class="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+							<div class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary hover:bg-primary/80 bg-gradient-to-r from-cyan-400 to-purple-500 text-white border-0">Custom Web Application</div>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-1.5 p-6">
+						<div class="text-2xl font-semibold leading-none tracking-tight text-white group-hover:text-cyan-400 transition-colors">HyipPro Traders</div>
+						<div class="text-sm text-gray-300">A versatile MLM and investment management platform with automated commission calculations and referral management.</div>
+					</div>
+					<div class="p-6 pt-0">
+						<div class="flex flex-wrap gap-2 mb-4">
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">PHP</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">MySQL</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">JavaScript</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">Laravel</div>
+						</div>
+						<button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 text-cyan-400 hover:text-white hover:bg-cyan-400/20 hover:px-4 p-0 group-hover:translate-x-1 transition-all duration-300">View Project<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button>
+					</div>
+				</div>
+				<div class="rounded-lg border text-card-foreground shadow-sm bg-white/5 border-white/10 hover:bg-white/10 transition-all duration-300 group overflow-hidden">
+					<div class="relative overflow-hidden"><img alt="Inventory Management System" loading="lazy" width="400" height="300" decoding="async" data-nimg="1" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110" style="color:transparent" src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400&amp;h=300&amp;fit=crop">
+						<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+						<div class="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+							<div class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary hover:bg-primary/80 bg-gradient-to-r from-cyan-400 to-purple-500 text-white border-0">Web Portal</div>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-1.5 p-6">
+						<div class="text-2xl font-semibold leading-none tracking-tight text-white group-hover:text-cyan-400 transition-colors">Inventory Management System</div>
+						<div class="text-sm text-gray-300">Comprehensive inventory management system for Pakistan's telephone industry with advanced tracking features.</div>
+					</div>
+					<div class="p-6 pt-0">
+						<div class="flex flex-wrap gap-2 mb-4">
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">PHP</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">MySQL</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">JavaScript</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">Web Portal</div>
+						</div>
+						<button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 text-cyan-400 hover:text-white hover:bg-cyan-400/20 hover:px-4 p-0 group-hover:translate-x-1 transition-all duration-300">View Project<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button>
+					</div>
+				</div>
+				<div class="rounded-lg border text-card-foreground shadow-sm bg-white/5 border-white/10 hover:bg-white/10 transition-all duration-300 group overflow-hidden">
+					<div class="relative overflow-hidden"><img alt="Bookey" loading="lazy" width="400" height="300" decoding="async" data-nimg="1" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110" style="color:transparent" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&amp;h=300&amp;fit=crop">
+						<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+						<div class="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+							<div class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary hover:bg-primary/80 bg-gradient-to-r from-cyan-400 to-purple-500 text-white border-0">WordPress Development</div>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-1.5 p-6">
+						<div class="text-2xl font-semibold leading-none tracking-tight text-white group-hover:text-cyan-400 transition-colors">Bookey</div>
+						<div class="text-sm text-gray-300">Dynamic entrepreneurial consultancy website empowering small businesses with innovative solutions.</div>
+					</div>
+					<div class="p-6 pt-0">
+						<div class="flex flex-wrap gap-2 mb-4">
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">WordPress</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">eCommerce</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">Landing Page</div>
+						</div>
+						<button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 text-cyan-400 hover:text-white hover:bg-cyan-400/20 hover:px-4 p-0 group-hover:translate-x-1 transition-all duration-300">View Project<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button>
+					</div>
+				</div>
+				<div class="rounded-lg border text-card-foreground shadow-sm bg-white/5 border-white/10 hover:bg-white/10 transition-all duration-300 group overflow-hidden">
+					<div class="relative overflow-hidden"><img alt="Easybrand Digital Agency" loading="lazy" width="400" height="300" decoding="async" data-nimg="1" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110" style="color:transparent" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&amp;h=300&amp;fit=crop">
+						<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+						<div class="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+							<div class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary hover:bg-primary/80 bg-gradient-to-r from-cyan-400 to-purple-500 text-white border-0">Web Application</div>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-1.5 p-6">
+						<div class="text-2xl font-semibold leading-none tracking-tight text-white group-hover:text-cyan-400 transition-colors">Easybrand Digital Agency</div>
+						<div class="text-sm text-gray-300">Complete project management portal with client interactions, invoicing, and API integrations.</div>
+					</div>
+					<div class="p-6 pt-0">
+						<div class="flex flex-wrap gap-2 mb-4">
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">PHP</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">MySQL</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">API Development</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">CMS</div>
+						</div>
+						<button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 text-cyan-400 hover:text-white hover:bg-cyan-400/20 hover:px-4 p-0 group-hover:translate-x-1 transition-all duration-300">View Project<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button>
+					</div>
+				</div>
+				<div class="rounded-lg border text-card-foreground shadow-sm bg-white/5 border-white/10 hover:bg-white/10 transition-all duration-300 group overflow-hidden">
+					<div class="relative overflow-hidden"><img alt="VF Constructions" loading="lazy" width="400" height="300" decoding="async" data-nimg="1" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110" style="color:transparent" src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=400&amp;h=300&amp;fit=crop">
+						<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+						<div class="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+							<div class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary hover:bg-primary/80 bg-gradient-to-r from-cyan-400 to-purple-500 text-white border-0">WordPress Development</div>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-1.5 p-6">
+						<div class="text-2xl font-semibold leading-none tracking-tight text-white group-hover:text-cyan-400 transition-colors">VF Constructions</div>
+						<div class="text-sm text-gray-300">Metal structure design company website showcasing precision-engineered construction solutions.</div>
+					</div>
+					<div class="p-6 pt-0">
+						<div class="flex flex-wrap gap-2 mb-4">
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">WordPress</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">Landing Page</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">Optimization</div>
+						</div>
+						<button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 text-cyan-400 hover:text-white hover:bg-cyan-400/20 hover:px-4 p-0 group-hover:translate-x-1 transition-all duration-300">View Project<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button>
+					</div>
+				</div>
+				<div class="rounded-lg border text-card-foreground shadow-sm bg-white/5 border-white/10 hover:bg-white/10 transition-all duration-300 group overflow-hidden">
+					<div class="relative overflow-hidden"><img alt="Auto Makelaar Vermaat" loading="lazy" width="400" height="300" decoding="async" data-nimg="1" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110" style="color:transparent" src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=400&amp;h=300&amp;fit=crop">
+						<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+						<div class="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+							<div class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary hover:bg-primary/80 bg-gradient-to-r from-cyan-400 to-purple-500 text-white border-0">WordPress Development</div>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-1.5 p-6">
+						<div class="text-2xl font-semibold leading-none tracking-tight text-white group-hover:text-cyan-400 transition-colors">Auto Makelaar Vermaat</div>
+						<div class="text-sm text-gray-300">Used car dealership platform with vehicle showcase and comprehensive automotive services.</div>
+					</div>
+					<div class="p-6 pt-0">
+						<div class="flex flex-wrap gap-2 mb-4">
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">WordPress</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">Landing Page</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">Optimization</div>
+						</div>
+						<button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 text-cyan-400 hover:text-white hover:bg-cyan-400/20 hover:px-4 p-0 group-hover:translate-x-1 transition-all duration-300">View Project<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button>
+					</div>
+				</div>
+				<div class="rounded-lg border text-card-foreground shadow-sm bg-white/5 border-white/10 hover:bg-white/10 transition-all duration-300 group overflow-hidden">
+					<div class="relative overflow-hidden"><img alt="Wie Rijdt" loading="lazy" width="400" height="300" decoding="async" data-nimg="1" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110" style="color:transparent" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&amp;h=300&amp;fit=crop">
+						<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+						<div class="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+							<div class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary hover:bg-primary/80 bg-gradient-to-r from-cyan-400 to-purple-500 text-white border-0">WordPress eCommerce</div>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-1.5 p-6">
+						<div class="text-2xl font-semibold leading-none tracking-tight text-white group-hover:text-cyan-400 transition-colors">Wie Rijdt</div>
+						<div class="text-sm text-gray-300">Netherlands motorbike community platform with events, gallery, and online merchandise store.</div>
+					</div>
+					<div class="p-6 pt-0">
+						<div class="flex flex-wrap gap-2 mb-4">
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">WordPress</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">eCommerce</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">Community</div>
+						</div>
+						<button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 text-cyan-400 hover:text-white hover:bg-cyan-400/20 hover:px-4 p-0 group-hover:translate-x-1 transition-all duration-300">View Project<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button>
+					</div>
+				</div>
+				<div class="rounded-lg border text-card-foreground shadow-sm bg-white/5 border-white/10 hover:bg-white/10 transition-all duration-300 group overflow-hidden">
+					<div class="relative overflow-hidden"><img alt="Webvoorelkbudget" loading="lazy" width="400" height="300" decoding="async" data-nimg="1" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110" style="color:transparent" src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&amp;h=300&amp;fit=crop">
+						<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+						<div class="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+							<div class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary hover:bg-primary/80 bg-gradient-to-r from-cyan-400 to-purple-500 text-white border-0">WordPress Development</div>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-1.5 p-6">
+						<div class="text-2xl font-semibold leading-none tracking-tight text-white group-hover:text-cyan-400 transition-colors">Webvoorelkbudget</div>
+						<div class="text-sm text-gray-300">Comprehensive web solution platform offering scalable website management for businesses.</div>
+					</div>
+					<div class="p-6 pt-0">
+						<div class="flex flex-wrap gap-2 mb-4">
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">WordPress</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">eCommerce</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">CMS</div>
+						</div>
+						<button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 text-cyan-400 hover:text-white hover:bg-cyan-400/20 hover:px-4 p-0 group-hover:translate-x-1 transition-all duration-300">View Project<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button>
+					</div>
+				</div>
+				<div class="rounded-lg border text-card-foreground shadow-sm bg-white/5 border-white/10 hover:bg-white/10 transition-all duration-300 group overflow-hidden">
+					<div class="relative overflow-hidden"><img alt="Digital Seed ERP" loading="lazy" width="400" height="300" decoding="async" data-nimg="1" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110" style="color:transparent" src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=400&amp;h=300&amp;fit=crop">
+						<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+						<div class="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+							<div class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary hover:bg-primary/80 bg-gradient-to-r from-cyan-400 to-purple-500 text-white border-0">Web Portal</div>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-1.5 p-6">
+						<div class="text-2xl font-semibold leading-none tracking-tight text-white group-hover:text-cyan-400 transition-colors">Digital Seed ERP</div>
+						<div class="text-sm text-gray-300">Agriculture Extension Department ERP system for KPK's seed industry digitalization.</div>
+					</div>
+					<div class="p-6 pt-0">
+						<div class="flex flex-wrap gap-2 mb-4">
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">PHP</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">MySQL</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">JavaScript</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">ERP</div>
+						</div>
+						<button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 text-cyan-400 hover:text-white hover:bg-cyan-400/20 hover:px-4 p-0 group-hover:translate-x-1 transition-all duration-300">View Project<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button>
+					</div>
+				</div>
+				<div class="rounded-lg border text-card-foreground shadow-sm bg-white/5 border-white/10 hover:bg-white/10 transition-all duration-300 group overflow-hidden">
+					<div class="relative overflow-hidden"><img alt="Towaqal Bikescheme" loading="lazy" width="400" height="300" decoding="async" data-nimg="1" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110" style="color:transparent" src="https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=400&amp;h=300&amp;fit=crop">
+						<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+						<div class="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+							<div class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary hover:bg-primary/80 bg-gradient-to-r from-cyan-400 to-purple-500 text-white border-0">Web Application</div>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-1.5 p-6">
+						<div class="text-2xl font-semibold leading-none tracking-tight text-white group-hover:text-cyan-400 transition-colors">Towaqal Bikescheme</div>
+						<div class="text-sm text-gray-300">Comprehensive bike scheme management platform with user, agent, and payment management.</div>
+					</div>
+					<div class="p-6 pt-0">
+						<div class="flex flex-wrap gap-2 mb-4">
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">PHP</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">MySQL</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">JavaScript</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">Portal</div>
+						</div>
+						<button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 text-cyan-400 hover:text-white hover:bg-cyan-400/20 hover:px-4 p-0 group-hover:translate-x-1 transition-all duration-300">View Project<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button>
+					</div>
+				</div>
+				<div class="rounded-lg border text-card-foreground shadow-sm bg-white/5 border-white/10 hover:bg-white/10 transition-all duration-300 group overflow-hidden">
+					<div class="relative overflow-hidden"><img alt="La Venezia Leiden" loading="lazy" width="400" height="300" decoding="async" data-nimg="1" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110" style="color:transparent" src="https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?w=400&amp;h=300&amp;fit=crop">
+						<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+						<div class="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+							<div class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary hover:bg-primary/80 bg-gradient-to-r from-cyan-400 to-purple-500 text-white border-0">WordPress Development</div>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-1.5 p-6">
+						<div class="text-2xl font-semibold leading-none tracking-tight text-white group-hover:text-cyan-400 transition-colors">La Venezia Leiden</div>
+						<div class="text-sm text-gray-300">Artisanal gelato shop website showcasing authentic ice cream craftsmanship in Leiden.</div>
+					</div>
+					<div class="p-6 pt-0">
+						<div class="flex flex-wrap gap-2 mb-4">
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">WordPress</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">eCommerce</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">Landing Page</div>
+						</div>
+						<button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 text-cyan-400 hover:text-white hover:bg-cyan-400/20 hover:px-4 p-0 group-hover:translate-x-1 transition-all duration-300">View Project<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button>
+					</div>
+				</div>
+				<div class="rounded-lg border text-card-foreground shadow-sm bg-white/5 border-white/10 hover:bg-white/10 transition-all duration-300 group overflow-hidden">
+					<div class="relative overflow-hidden"><img alt="Online Krediet Rapport" loading="lazy" width="400" height="300" decoding="async" data-nimg="1" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110" style="color:transparent" src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&amp;h=300&amp;fit=crop">
+						<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+						<div class="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+							<div class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary hover:bg-primary/80 bg-gradient-to-r from-cyan-400 to-purple-500 text-white border-0">WordPress eCommerce</div>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-1.5 p-6">
+						<div class="text-2xl font-semibold leading-none tracking-tight text-white group-hover:text-cyan-400 transition-colors">Online Krediet Rapport</div>
+						<div class="text-sm text-gray-300">Financial empowerment platform providing detailed credit reports for companies.</div>
+					</div>
+					<div class="p-6 pt-0">
+						<div class="flex flex-wrap gap-2 mb-4">
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">WordPress</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">eCommerce</div>
+							<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-white/20 text-gray-300 text-xs">Plugin Development</div>
+						</div>
+						<button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 text-cyan-400 hover:text-white hover:bg-cyan-400/20 hover:px-4 p-0 group-hover:translate-x-1 transition-all duration-300">View Project<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="text-center mt-12">
+				<button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 px-4 py-2 bg-gradient-to-r from-cyan-400 to-purple-500 hover:from-cyan-500 hover:to-purple-600 text-white border-0">View All Projects<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button>
+			</div> -->
+		</div>
+	</section>
+
+	<section id="gallery" class="py-16 px-4">
+		<div class="container mx-auto">
+			<div class="text-center mb-16">
+				<div class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 bg-white/10 text-white border-0 mb-4">Our Workspace</div>
+				<h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">Where Magic Happens</h2>
+				<p class="text-xl text-gray-300 max-w-3xl mx-auto">Take a peek inside our creative workspace where ideas come to life and innovation thrives.</p>
+			</div>
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+				<div class="group relative overflow-hidden rounded-2xl">
+					<img alt="Office gallery 1" loading="lazy" width="400" height="300" decoding="async" data-nimg="1" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" style="color:transparent" src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&amp;h=300&amp;fit=crop">
+					<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+				</div>
+				<div class="group relative overflow-hidden rounded-2xl">
+					<img alt="Office gallery 2" loading="lazy" width="400" height="300" decoding="async" data-nimg="1" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" style="color:transparent" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&amp;h=300&amp;fit=crop">
+					<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+				</div>
+				<div class="group relative overflow-hidden rounded-2xl">
+					<img alt="Office gallery 3" loading="lazy" width="400" height="300" decoding="async" data-nimg="1" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" style="color:transparent" src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=400&amp;h=300&amp;fit=crop">
+					<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+				</div>
+				<div class="group relative overflow-hidden rounded-2xl">
+					<img alt="Office gallery 4" loading="lazy" width="400" height="300" decoding="async" data-nimg="1" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" style="color:transparent" src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&amp;h=300&amp;fit=crop">
+					<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+				</div>
+				<div class="group relative overflow-hidden rounded-2xl">
+					<img alt="Office gallery 5" loading="lazy" width="400" height="300" decoding="async" data-nimg="1" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" style="color:transparent" src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&amp;h=300&amp;fit=crop">
+					<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+				</div>
+				<div class="group relative overflow-hidden rounded-2xl">
+					<img alt="Office gallery 6" loading="lazy" width="400" height="300" decoding="async" data-nimg="1" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" style="color:transparent" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&amp;h=300&amp;fit=crop">
+					<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- <section id="blog" class="py-16 px-4">
+		<div class="container mx-auto">
+			<div class="text-center mb-16">
+				<div class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 bg-white/10 text-white border-0 mb-4">Latest Insights</div>
+				<h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">From Our Blog</h2>
+				<p class="text-xl text-gray-300 max-w-3xl mx-auto">Stay updated with the latest trends, tips, and insights from the world of web development.</p>
+			</div>
+			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<div class="rounded-lg border text-card-foreground shadow-sm bg-white/5 border-white/10 hover:bg-white/10 transition-all duration-300 group">
+					<div class="relative overflow-hidden rounded-t-lg"><img alt="The Future of Web Development in 2024" loading="lazy" width="400" height="250" decoding="async" data-nimg="1" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105" style="color:transparent" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&amp;h=250&amp;fit=crop">
+					</div>
+					<div class="flex flex-col space-y-1.5 p-6">
+						<div class="text-sm text-cyan-400 mb-2">Dec 15, 2024</div>
+						<div class="text-2xl font-semibold leading-none tracking-tight text-white group-hover:text-cyan-400 transition-colors">The Future of Web Development in 2024</div>
+						<div class="text-sm text-gray-300">Exploring emerging trends and technologies shaping the web development landscape.</div>
+					</div>
+					<div class="p-6 pt-0">
+						<button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 text-cyan-400 hover:text-white hover:bg-cyan-400/20 hover:px-4 p-0 group-hover:translate-x-1 transition-all duration-300">Read More<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button>
+					</div>
+				</div>
+				<div class="rounded-lg border text-card-foreground shadow-sm bg-white/5 border-white/10 hover:bg-white/10 transition-all duration-300 group">
+					<div class="relative overflow-hidden rounded-t-lg"><img alt="Building Scalable React Applications" loading="lazy" width="400" height="250" decoding="async" data-nimg="1" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105" style="color:transparent" src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&amp;h=250&amp;fit=crop">
+					</div>
+					<div class="flex flex-col space-y-1.5 p-6">
+						<div class="text-sm text-cyan-400 mb-2">Dec 10, 2024</div>
+						<div class="text-2xl font-semibold leading-none tracking-tight text-white group-hover:text-cyan-400 transition-colors">Building Scalable React Applications</div>
+						<div class="text-sm text-gray-300">Best practices for creating maintainable and performant React applications.</div>
+					</div>
+					<div class="p-6 pt-0">
+						<button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 text-cyan-400 hover:text-white hover:bg-cyan-400/20 hover:px-4 p-0 group-hover:translate-x-1 transition-all duration-300">Read More<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button>
+					</div>
+				</div>
+				<div class="rounded-lg border text-card-foreground shadow-sm bg-white/5 border-white/10 hover:bg-white/10 transition-all duration-300 group">
+					<div class="relative overflow-hidden rounded-t-lg"><img alt="E-commerce Trends for Startups" loading="lazy" width="400" height="250" decoding="async" data-nimg="1" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105" style="color:transparent" src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&amp;h=250&amp;fit=crop">
+					</div>
+					<div class="flex flex-col space-y-1.5 p-6">
+						<div class="text-sm text-cyan-400 mb-2">Dec 5, 2024</div>
+						<div class="text-2xl font-semibold leading-none tracking-tight text-white group-hover:text-cyan-400 transition-colors">E-commerce Trends for Startups</div>
+						<div class="text-sm text-gray-300">How new businesses can leverage modern e-commerce solutions to grow faster.</div>
+					</div>
+					<div class="p-6 pt-0">
+						<button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 text-cyan-400 hover:text-white hover:bg-cyan-400/20 hover:px-4 p-0 group-hover:translate-x-1 transition-all duration-300">Read More<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+
+	<section id="contact" class="py-16 px-4">
+		<div class="container mx-auto">
+			<div class="text-center mb-16">
+				<div class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 bg-white/10 text-white border-0 mb-4">Get In Touch</div>
+				<h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">Ready to Start Your Project?</h2>
+				<p class="text-xl text-gray-300 max-w-3xl mx-auto">Let's discuss how we can help bring your digital vision to life. Book a consultation or send us a message.</p>
+			</div>
+			<div class="grid lg:grid-cols-2 gap-12">
+				<div class="rounded-lg border bg-card text-card-foreground shadow-sm bg-gradient-to-br from-white/8 to-white/3 border-white/30 backdrop-blur-sm">
+					<div class="flex flex-col space-y-1.5 p-6">
+						<div class="font-semibold tracking-tight text-2xl text-white">Send us a message</div>
+						<div class="text-sm text-gray-300">Fill out the form below and we'll get back to you within 24 hours.</div>
+					</div>
+					<form id="contact_form_email" method="POST" class="p-6 pt-0 space-y-6">
+						<div id="contact_form_email_response"></div>
+						<div class="grid grid-cols-2 gap-4">
+							<div>
+								<label class="text-sm text-gray-300 mb-2 block">First Name</label>
+								<input class="flex h-10 w-full rounded-md border px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm bg-white/5 border-white/20 text-white placeholder:text-gray-400" placeholder="John" id="first_name" name="first_name">
+							</div>
+							<div>
+								<label class="text-sm text-gray-300 mb-2 block">Last Name</label>
+								<input class="flex h-10 w-full rounded-md border px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm bg-white/5 border-white/20 text-white placeholder:text-gray-400" placeholder="Doe" id="last_name" name="last_name">
+							</div>
+						</div>
+						<div>
+							<label class="text-sm text-gray-300 mb-2 block">Email</label>
+							<input class="flex h-10 w-full rounded-md border px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm bg-white/5 border-white/20 text-white placeholder:text-gray-400" placeholder="john@example.com" id="email" name="email">
+						</div>
+						<div>
+							<label class="text-sm text-gray-300 mb-2 block">Phone</label>
+							<input class="flex h-10 w-full rounded-md border px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm bg-white/5 border-white/20 text-white placeholder:text-gray-400" placeholder="00923124567890" id="phone" name="phone">
+						</div>
+						<div>
+							<label class="text-sm text-gray-300 mb-2 block">Project Type</label>
+							<select class="w-full p-3 bg-transparent border border-white/20 rounded-md text-white" id="project_type" name="project_type">
+								<option value="">Select a service</option>
+								<option value="Custom Web Application">Custom Web Application</option>
+								<option value="WordPress Development">WordPress Development</option>
+								<option value="Ecommerce Development">Ecommerce Development</option>
+								<option value="Website Development">Website Development</option>
+								<option value="Web Design">Web Design</option>
+							</select>
+						</div>
+						<div>
+							<label class="text-sm text-gray-300 mb-2 block">Message</label>
+							<textarea class="flex min-h-[80px] w-full rounded-md border px-3 py-2 text-base ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm bg-white/5 border-white/20 text-white placeholder:text-gray-400" placeholder="Tell us about your project..." rows="4" id="message" name="message"></textarea>
+						</div>
+						<button type="submit" name="send_email_btn" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 px-4 py-2 w-full bg-gradient-to-r from-cyan-400 to-purple-500 hover:from-cyan-500 hover:to-purple-600 text-white border-0">Send Message<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button>
+					</form>
+				</div>
+				<div class="space-y-8">
+					<div class="rounded-lg border bg-card text-card-foreground bg-gradient-to-br from-slate-800/60 to-slate-900/80 border-cyan-400/30 backdrop-blur-sm shadow-2xl shadow-cyan-400/20">
+						<div class="flex flex-col space-y-1.5 p-6">
+							<div class="font-semibold tracking-tight text-2xl text-white flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar w-6 h-6 mr-3 text-cyan-400"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>Book a Consultation</div>
+							<div class="text-sm text-gray-300">Schedule a free 30-minute consultation to discuss your project requirements.</div>
+						</div>
+						<div class="p-6 pt-0">
+							<button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary hover:bg-primary/90 h-10 px-4 py-2 w-full bg-gradient-to-r from-cyan-400 to-purple-500 hover:from-cyan-500 hover:to-purple-600 text-white border-0">Schedule Meeting</button>
+						</div>
+					</div>
+					<div class="space-y-6">
+						<div class="flex items-start space-x-4">
+							<div class="p-3 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-lg">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe w-6 h-6 text-white"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+							</div>
+							<div>
+								<h3 class="text-lg font-semibold text-white">Visit Our Office</h3>
+								<p class="text-gray-300">737 Manchester tower , second floor, G4, Johar town, <br>Lahore, 54000, Pakistan</p>
+							</div>
+						</div>
+						<div class="flex items-start space-x-4">
+							<div class="p-3 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-lg">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users w-6 h-6 text-white"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+							</div>
+							<div>
+								<h3 class="text-lg font-semibold text-white">Call Us</h3>
+								<p class="text-gray-300">+92 (320) 9973190<br>Mon-Fri 9AM-6PM PST</p>
+							</div>
+						</div>
+						<div class="flex items-start space-x-4">
+							<div class="p-3 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-lg">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-6 h-6 text-white"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+							</div>
+							<div>
+								<h3 class="text-lg font-semibold text-white">Email Us</h3>
+								<p class="text-gray-300">muhammadsaifullahasif@gmail.com<br>We respond within 24 hours</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="py-16 px-4">
+		<div class="container mx-auto">
+			<div class="text-center mb-12">
+				<div class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 bg-white/10 text-white border-0 mb-4">FAQ</div>
+				<h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">Frequently Asked Questions</h2>
+				<p class="text-gray-300 max-w-2xl mx-auto">Find answers to common questions about our services and process.</p>
+			</div>
+			<div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+				<div class="rounded-lg border text-card-foreground shadow-sm bg-white/5 border-white/10">
+					<div class="flex flex-col space-y-1.5 p-6">
+						<div class="font-semibold tracking-tight text-lg text-white">How long does a typical project take?</div>
+					</div>
+					<div class="p-6 pt-0">
+						<p class="text-gray-300">Project timelines vary based on complexity. Simple websites take 2-4 weeks, while complex web applications can take 3-6 months.</p>
+					</div>
+				</div>
+				<div class="rounded-lg border text-card-foreground shadow-sm bg-white/5 border-white/10">
+					<div class="flex flex-col space-y-1.5 p-6">
+						<div class="font-semibold tracking-tight text-lg text-white">Do you provide ongoing support?</div>
+					</div>
+					<div class="p-6 pt-0">
+						<p class="text-gray-300">Yes, we offer comprehensive support and maintenance packages to keep your website running smoothly after launch.</p>
+					</div>
+				</div>
+				<div class="rounded-lg border text-card-foreground shadow-sm bg-white/5 border-white/10">
+					<div class="flex flex-col space-y-1.5 p-6">
+						<div class="font-semibold tracking-tight text-lg text-white">What technologies do you use?</div>
+					</div>
+					<div class="p-6 pt-0">
+						<p class="text-gray-300">We use modern technologies including React, Next.js, WordPress, PHP, Laravel, and various databases depending on project needs.</p>
+					</div>
+				</div>
+				<div class="rounded-lg border text-card-foreground shadow-sm bg-white/5 border-white/10">
+					<div class="flex flex-col space-y-1.5 p-6">
+						<div class="font-semibold tracking-tight text-lg text-white">Can you work with existing websites?</div>
+					</div>
+					<div class="p-6 pt-0">
+						<p class="text-gray-300">We can redesign, optimize, or add new features to existing websites and applications.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="bg-black/20 border-t border-white/10 py-12 px-4">
+		<div class="container mx-auto">
+			<div class="grid md:grid-cols-4 gap-8">
+				<div class="space-y-4">
+					<div class="flex items-center space-x-2">
+						<div class="w-10 h-10 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-lg flex items-center justify-center">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+								fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+								stroke-linejoin="round" class="lucide lucide-code-xml w-6 h-6 text-white">
+								<path d="m18 16 4-4-4-4"></path>
+								<path d="m6 8-4 4 4 4"></path>
+								<path d="m14.5 4-5 16"></path>
+							</svg>
+						</div>
+						<span class="text-2xl font-bold text-white">Wirecoder</span>
+					</div>
+					<p class="text-gray-400">Wiring innovation into every project. We create exceptional web experiences that drive growth.</p>
+				</div>
+				<div>
+					<h3 class="text-lg font-semibold text-white mb-4">Services</h3>
+					<ul class="space-y-2 text-gray-400">
+						<li><a class="hover:text-cyan-400 transition-colors" href="#services">Custom Web Apps</a></li>
+						<li><a class="hover:text-cyan-400 transition-colors" href="#services">WordPress Development</a></li>
+						<li><a class="hover:text-cyan-400 transition-colors" href="#services">Ecommerce Solutions</a></li>
+						<li><a class="hover:text-cyan-400 transition-colors" href="#services">Web Design</a></li>
+					</ul>
+				</div>
+				<div>
+					<h3 class="text-lg font-semibold text-white mb-4">Company</h3>
+					<ul class="space-y-2 text-gray-400">
+						<li><a class="hover:text-cyan-400 transition-colors" href="#about">About Us</a></li>
+						<li><a class="hover:text-cyan-400 transition-colors" href="#gallery">Gallery</a></li>
+						<!-- <li><a class="hover:text-cyan-400 transition-colors" href="#">Our Team</a></li> -->
+						<!-- <li><a class="hover:text-cyan-400 transition-colors" href="#">Careers</a></li> -->
+						<li><a class="hover:text-cyan-400 transition-colors" href="#contact">Contact</a></li>
+					</ul>
+				</div>
+				<div>
+					<h3 class="text-lg font-semibold text-white mb-4">Connect</h3>
+					<ul class="space-y-2 text-gray-400">
+						<li><a class="hover:text-cyan-400 transition-colors" href="https://linkedin.com/in/muhammadsaifullahasif">LinkedIn</a></li>
+						<!-- <li><a class="hover:text-cyan-400 transition-colors" href="#">Twitter</a></li> -->
+						<li><a class="hover:text-cyan-400 transition-colors" href="https://github.com/muhammadsaifullahasif">GitHub</a></li>
+						<li><a class="hover:text-cyan-400 transition-colors" href="https://instagram.com/muhammadsaifullahasif">Instagram</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="border-t border-white/10 mt-12 pt-8 text-center text-gray-400">
+				<p>© 2025 Wirecoder. All rights reserved. Built with ❤️ and lots of coffee.</p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(document).on('click', '.service-item-btn', function(){
+				var id = $(this).attr('id');
+				$('.service-item-btn').removeClass('rounded-lg bg-card text-card-foreground cursor-pointer transition-all duration-500 group bg-gradient-to-br from-slate-800/80 to-slate-700/60 border-2 border-cyan-400/80 scale-105 shadow-2xl shadow-cyan-400/30 ring-1 ring-cyan-400/50').addClass('rounded-lg border text-card-foreground shadow-sm cursor-pointer transition-all duration-500 group bg-white/5 border-white/10 hover:bg-white/10 hover:border-white/20 hover:scale-102');
+				$(this).removeClass('rounded-lg border text-card-foreground shadow-sm cursor-pointer transition-all duration-500 group bg-white/5 border-white/10 hover:bg-white/10 hover:border-white/20 hover:scale-102').addClass('rounded-lg bg-card text-card-foreground cursor-pointer transition-all duration-500 group bg-gradient-to-br from-slate-800/80 to-slate-700/60 border-2 border-cyan-400/80 scale-105 shadow-2xl shadow-cyan-400/30 ring-1 ring-cyan-400/50');
+				$('.service-item-btn .features div').removeClass('border-cyan-400/50 text-cyan-300').addClass('border-white/20 text-gray-400');
+				$(this).children().children('.features').children().removeClass('border-white/20 text-gray-400').addClass('border-cyan-400/50 text-cyan-300');
+				$('.service-item-container').addClass('hidden');
+				$('#' + id + '_container').removeClass('hidden');
+			});
+
+			$('#contact_form_email').on('submit', function(e){
+				e.preventDefault();
+				var first_name = $('#first_name').val();
+				var last_name = $('#last_name').val();
+				var email = $('#email').val();
+				var phone = $('#phone').val();
+				var project_type = $('#project_type').val();
+				var message = $('#message').val();
+
+				if(first_name != '' && last_name != '' && email != '' && phone != '') {
+					$.ajax({
+						url: 'http://sefpt.com/send-email.php',
+						type: 'POST',
+						data: { action:'send_form', first_name:first_name, last_name:last_name, email:email, phone:phone, project_type:project_type, message:message },
+						success: function(result) {
+							if(result == 0) {
+								$('#contact_form_email_response').html("<span class='px-2 py-1 mb-3 rounded bg-red-300/25 text-red-400 border border-red-400'>Please fill all required fields.</span>");
+							} else if(result == 1) {
+								$('#contact_form_email_response').html("<span class='px-2 py-1 mb-3 rounded bg-red-300/25 text-red-400 border border-red-400'>Please try again.</span>");
+							} else if(result == 2) {
+								$('#contact_form_email_response').html("<span class='px-2 py-1 mb-3 rounded bg-green-300/50 text-white border border-green-400'>We received your information, and contact you with 2 to 3 business days.</span>");
+								$(this).trigger("reset");
+							}
+						}
+					});
+				} else {
+					$('#contact_form_email_response').html("<span class='px-2 py-1 mb-3 rounded bg-red-300/25 text-red-400 border border-red-400'>Please fill all required fields.</span>");
+				}
+			});
+		});
+	</script>
+</body>
+
+</html>
