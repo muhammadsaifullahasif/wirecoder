@@ -1121,7 +1121,7 @@
 
 				if(first_name != '' && last_name != '' && email != '' && phone != '') {
 					$.ajax({
-						url: 'http://sefpt.com/send-email.php',
+						url: 'https://sefpt.com/send-email.php',
 						type: 'POST',
 						data: { action:'send_form', first_name:first_name, last_name:last_name, email:email, phone:phone, project_type:project_type, message:message },
 						success: function(result) {
