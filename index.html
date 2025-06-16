@@ -1131,7 +1131,7 @@
 								$('#contact_form_email_response').html("<span class='px-2 py-1 mb-3 rounded bg-red-300/25 text-red-400 border border-red-400'>Please try again.</span>");
 							} else if(result == 2) {
 								$('#contact_form_email_response').html("<span class='px-2 py-1 mb-3 rounded bg-green-300/50 text-white border border-green-400'>We received your information, and contact you with 2 to 3 business days.</span>");
-								$(this).trigger("reset");
+								$('#contact_form_email').trigger("reset");
 							}
 						}
 					});
